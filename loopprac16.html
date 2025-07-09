@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input" placeholder="Enter No.">
+    <br>
+    <button onclick="getvalue()">Click</button>
+    <br>
+    <p id="result"></p>
+
+    <script>
+        function getvalue() {
+            var input = document.getElementById("input").value;
+            const numbers = input.split(',').map(num => parseFloat(num.trim()));
+
+
+            let sum = 0;
+            let max = numbers[0];
+            let min = numbers[0];
+
+
+            for (let i = 0; i < numbers.length; i++) {
+                let num = numbers[i];
+                sum += num;
+                if (num > max) max = num;
+                if (num < min) min = num;
+            }
+
+            let average = sum / numbers.length;
+
+
+            document.getElementById('result').innerHTML = `
+        <strong>Results:</strong><br>
+        Array: [${numbers.join(', ')}] <br>
+        Sum: ${sum} <br>
+        Average: ${average.toFixed(2)} <br>
+        Maximum: ${max} <br>
+        Minimum: ${min}`;
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

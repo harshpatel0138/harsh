@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(188, 165, 211);
+}
+
+.container {
+    margin: 100px;
+    margin-left: 100px;
+    margin-right: 1000px;
+    background-color: rgb(227, 231, 231);
+    padding: 70px;
+    text-align: center;
+
+
+}
+
+.main {
+    margin: 20px;
+}
+
+.container1 {
+    margin: 150px;
+    margin-left: 600px;
+    margin-right: 520px;
+    background-color: rgb(227, 231, 231);
+    padding: 70px;
+    text-align: center;
+    margin-top: -445px;
+
+
+
+
+}
+
+.main1 {
+    margin: 20px;
+}
+
+.container2 {
+    margin: 100px;
+    margin-left: 1075px;
+    margin-top: -500px;
+
+
+    background-color: rgb(227, 231, 231);
+    padding: 40px;
+    height: 36vh;
+    width: ;
+
+
+
+}
+
+.change {
+
+    height: 6vh;
+    width: 200px;
+    margin: 10px;
+    background-color: rgb(47, 27, 96);
+    color: aliceblue;
+
+
+}
+
+.jani {
+    height: 6vh;
+    width: 200px;
+    margin: 10px;
+    background-color: rgb(46, 206, 242);
+    color: aliceblue;
+}
+
+.give {
+    height: 6vh;
+    width: 200px;
+    margin: 10px;
+    background-color: rgb(47, 27, 96);
+    color: aliceblue;
+
+}
+
+.jaki {
+    margin: 30px;
+}

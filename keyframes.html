@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: #fff;
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            transition: 0.5s ease;
+            box-shadow: inset 0px 0px 15px 0px green;
+            animation-name: boxAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        .box1 {
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            border-radius: 200px;
+            animation: boxAnimation1;
+            transition: 0.5s ease;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+
+        @keyframes boxAnimation1 {
+            0% {
+                background-color: yellow;
+            }
+
+            25% {
+                background-color: rgb(8, 0, 255);
+            }
+
+            50% {
+                background-color: violet;
+            }
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Animation using keyframes.</h1>
+    <hr>
+
+    <div class="box">
+        <h1>I am box.</h1>
+    </div>
+
+    <div class="box1">
+        <h1></h1>
+
+    </div>
+</body>
+
+</html>

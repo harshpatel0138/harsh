@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Memory Game</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #board {
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 100px;
+            height: 100px;
+            background: #007BFF;
+            color: #fff;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            user-select: none;
+            border-radius: 10px;
+        }
+
+        .flipped {
+            background: #fff;
+            color: #007BFF;
+            border: 2px solid #007BFF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>🧠 Mini Memory Game</h2>
+    <div id="board"></div>
+
+    <script>
+        const emojis = ['🍎', '🍌'];
+        const cards = [...emojis, ...emojis].sort(() => Math.random() - 0.5);
+        let first = null, lock = false;
+
+        const board = document.getElementById('board');
+
+        cards.forEach((emoji, i) => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.textContent = '❓';
+            card.dataset.emoji = emoji;
+            card.addEventListener('click', () => {
+                if (lock || card.classList.contains('flipped')) return;
+
+                card.textContent = emoji;
+                card.classList.add('flipped');
+
+                if (!first) {
+                    first = card;
+                } else {
+                    lock = true;
+                    if (first.dataset.emoji === emoji) {
+                        first = null;
+                        lock = false;
+                    } else {
+                        setTimeout(() => {
+                            first.textContent = '❓';
+                            card.textContent = '❓';
+                            first.classList.remove('flipped');
+                            card.classList.remove('flipped');
+                            first = null;
+                            lock = false;
+                        }, 800);
+                    }
+                }
+            });
+            board.appendChild(card);
+        });
+    </script>
+
+</body>
+
+</html>

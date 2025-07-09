@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <SCript>
+        let animals = ["cat", "dog", "tiger", "lion", "elephant"];
+        for (let i = 0; i < animals.length; i += 2) {
+            console.log(animals[i]);
+        }
+    </SCript> -->
+
+    <!-- <script>
+        let values = [10, -3, 5, -7, 8, -1];
+        let positive = [];
+        for (let i = 0; i < values.length; i++) {
+            if (values[i] >= 0) {
+                positive.push(values[i]);
+            }
+        }
+        console.log(positive);
+    </script> -->
+
+    <script>
+        let nums = [11, 45, 23, 89, 77, 89];
+        let unique = [...new Set(nums)];
+        unique.sort((a, b) => b - a);
+        console.log("Second largest:", unique[1]);
+
+    </script>
+
+    <script>
+        let arr = [1, 2, 2, 3, 1, 4, 3, 2];
+        let freq = {};
+        for (let i = 0; i < arr.length; i++) {
+            freq[arr[i]] = (freq[arr[i]] || 0) + 1;
+        }
+        console.log(freq);
+
+    </script>
+
+
+</body>
+
+</html>

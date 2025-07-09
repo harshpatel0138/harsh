@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUGX Gaming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #222;
+        }
+
+        header {
+            background: #0866ff;
+            padding: 2rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+
+
+
+
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            background: #f9f9f9;
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h2.section-title {
+            text-align: center;
+            margin: 3rem 0 1rem;
+        }
+
+        .game-list,
+        .category-list {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            padding: 1rem 2rem;
+        }
+
+        .game-item,
+        .category-item {
+            background: #f1f1f1;
+            padding: 1rem;
+            border-radius: 12px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .game-item img,
+        .category-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #0866ff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .cta-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 3rem 2rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-box {
+            width: 300px;
+            padding: 1.5rem;
+            background: #f1f1f1;
+            border-radius: 12px;
+            margin: 1rem;
+            text-align: center;
+        }
+
+        .cta-box button {
+            background: #ff4a4a;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .subscribe input {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 8px;
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">LUGX</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Our Shop</a>
+            <a href="#">Product Details</a>
+            <a href="#">Contact Us</a>
+            <a href="#" style="color: #ff4a4a">Sign In</a>
+        </nav>
+    </header>
+
+    <div class="container1">
+        <p>Welcome to LUGX</p>
+        <h1>BEST GAMING SITE EVER!</h1>
+        <p class="line">Lorem ipsum dolor sit, amet consectetur adipisicing elit., nulla q</p>
+        <p class="line">accusantium repellat
+            harum eos, officiis ipsa ipsam zjcnsjnjk </p>
+        <p class="line">harum eos, officii</p>
+        <input type="text" placeholder="Type somethimg" class="input">
+        <button class="seni">Search now</button>
+    </div>
+
+    <section class="features">
+        <div class="feature-box">Free Storage</div>
+        <div class="feature-box">User More</div>
+        <div class="feature-box">Reply Ready</div>
+        <div class="feature-box">Easy Layout</div>
+    </section>
+
+    <h2 class="section-title">Trending Games</h2>
+    <div class="game-list">
+        <div class="game-item">
+            <img src="https://via.placeholder.com/150" alt="Game">
+            <p>Assassin Creed</p>
+        </div>
+        <!-- Repeat .game-item -->
+    </div>
+
+    <h2 class="section-title">Most Played</h2>
+    <div class="game-list">
+        <div class="game-item">
+            <img src="https://via.placeholder.com/150" alt="Game">
+            <p>PUBG</p>
+        </div>
+        <!-- Repeat .game-item -->
+    </div>
+
+    <h2 class="section-title">Top Categories</h2>
+    <div class="category-list">
+        <div class="category-item">
+            <img src="https://via.placeholder.com/150" alt="Category">
+            <p>Action</p>
+        </div>
+        <!-- Repeat .category-item -->
+    </div>
+
+    <section class="cta-section">
+        <div class="cta-box">
+            <h3>Go Pre-Order Buy & Get Best Prices</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="cta-box subscribe">
+            <h3>Get Up To $100 Off, Subscribe!</h3>
+            <input type="email" placeholder="Your email">
+            <button>Subscribe Now</button>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2048 LUGX Gaming Company. Design by TemplateMo
+    </footer>
+</body>
+
+</html>

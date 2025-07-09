@@ -1,0 +1,444 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: rgb(229, 226, 226);
+    background-image: url('image/page-heading-bg.jpg');
+}
+
+header ul {
+    display: flex;
+    margin: 0;
+    font-size: 0.9em;
+    color: rgb(242, 239, 239);
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+header ul li a {
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 50px;
+    margin-top: 10px;
+
+
+}
+
+.col {
+
+    background-color: rgb(226, 8, 8);
+    font-size: 0.6em;
+    border: 10px;
+    color: rgb(236, 243, 247);
+    margin-left: 40px;
+    width: 50px;
+    border-radius: 35px;
+    height: 20px;
+
+
+}
+
+.logoe {
+    background-color: blue;
+    height: 100px;
+    width: 110px;
+    border-radius: 50px;
+    margin-top: -50px;
+
+
+}
+
+.coli li a {
+    color: rgb(222, 227, 231);
+
+}
+
+.coli {
+    margin-top: -40px;
+}
+
+.container1 {
+
+    background-image: url('image/banner-bg.jpg');
+    height: 400px;
+    margin-top: -20px;
+    padding-left: 65px;
+    padding-top: 60px;
+    color: aliceblue;
+    border-radius: 0px;
+}
+
+.line {
+    line-height: 5px;
+}
+
+.input {
+    margin-top: 40px;
+    border-radius: 35px;
+    height: 30px;
+    width: 300px;
+}
+
+.seni {
+    margin-left: -90px;
+    border-radius: 35px;
+    height: 35px;
+    width: 100px;
+    background-color: rgb(231, 10, 10);
+    color: aliceblue;
+
+
+
+
+}
+
+.imagew {
+    margin-left: 700px;
+    margin-top: -200px;
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    height: 10px;
+    width: 40px;
+    background-color: rgb(215, 210, 210);
+    margin: 55px;
+    border-radius: 15px;
+    padding: 100px;
+
+}
+
+
+.maor p {
+    margin-left: 120px;
+    color: rgb(231, 15, 15);
+}
+
+.maor h3 {
+    margin-left: 120px;
+
+}
+
+.maor button {
+    margin-left: 1050px;
+    height: 30px;
+    width: 80px;
+    border-radius: 50px;
+    font-size: 0.5em;
+    color: azure;
+    background-color: red;
+}
+
+.boxes {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.boxes1 {
+    background-color: rgb(240, 236, 231);
+    border-radius: 20px;
+
+    /* margin-left: 80px; */
+    margin: 55px;
+
+
+
+
+
+
+}
+
+.boxes1 p {
+    margin-left: 20px;
+}
+
+.seti {
+    height: 220px;
+    width: 230px;
+    border-radius: 25px;
+}
+
+.seti1 {
+    border-radius: 25px;
+}
+
+.raja {
+    background-color: rgb(236, 226, 226);
+    height: 600px;
+    width: 1500px;
+    border-radius: 65px;
+}
+
+.maor1 {
+    padding: 50px;
+    margin-left: -50px;
+}
+
+.maor1 p {
+    margin-left: 120px;
+    color: rgb(215, 23, 23);
+
+}
+
+.maor1 h3 {
+    margin-left: 120px;
+
+}
+
+.maor1 button {
+    margin-left: 1075px;
+    height: 30px;
+    width: 80px;
+    border-radius: 50px;
+    font-size: 0.5em;
+    color: azure;
+    background-color: red;
+}
+
+.seti2 {
+    height: 170px;
+    width: 210px;
+    border-radius: 25px;
+}
+
+.boxes2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.boxes3 {
+
+    background-color: rgb(247, 244, 239);
+    border-radius: 35px;
+    margin: 10px;
+    height: 290px;
+}
+
+.boxes3 p {
+    text-align: center;
+}
+
+.boxes3 button {
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.maor4 {
+    text-align: center;
+}
+
+.maor4 p {
+    color: red;
+}
+
+.boxes5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes7 {
+
+    background-color: rgb(13, 99, 227);
+    border-radius: 35px;
+    margin: 10px;
+    height: 200px;
+
+}
+
+.boxes7 p {
+    text-align: center;
+    color: white;
+}
+
+.solop {
+    height: 400px;
+    width: 450px;
+    margin-top: -680px;
+    margin-left: 500px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+.edity {
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-top: 300px;
+
+    height: 450px;
+    width: 400px;
+    background-color: rgb(250, 234, 234);
+    border-radius: 20px;
+    margin-left: 100px;
+
+
+
+}
+
+.edity p {
+    color: red;
+}
+
+.edity button {
+    height: 40px;
+    width: 130px;
+    border-radius: 35px;
+    color: white;
+    background-color: red;
+    margin-top: 50px;
+}
+
+.edity1 {
+    background-color: rgb(241, 204, 204);
+    margin-left: 900px;
+    height: 300px;
+    width: 400px;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: -400px;
+}
+
+.jama {
+    height: 25px;
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+}
+
+.jama2 {
+    margin-left: -30px;
+    height: 30px;
+    width: 120px;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+}
+
+.edity1 p {
+    color: red;
+}
+
+.footr {
+    margin-top: 200px;
+    text-align: center;
+    background-image: url('image/footer-bg.jpg');
+    height: 50px;
+    padding-top: 40px;
+    border-radius: 600px;
+    color: white;
+
+}
+
+@media(max-width:500px) {
+    body {
+        background-color: rgb(231, 226, 226);
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: rgb(229, 226, 226);
+        background-image: url('image/page-heading-bg.jpg');
+        width: 1470px;
+        margin-left: -10px;
+    }
+
+    .container1 {
+
+        background-image: url('image/banner-bg.jpg');
+        height: 400px;
+        margin-top: -20px;
+        padding-left: 65px;
+        padding-top: 60px;
+        color: aliceblue;
+        border-radius: 0px;
+        width: 1460px;
+        margin-left: -10px;
+    }
+
+    .container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 750px;
+
+    }
+
+    .boxes {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 750px;
+
+
+    }
+
+    .boxes5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 750px;
+    }
+
+    .footr {
+        margin-top: 200px;
+        text-align: center;
+        background-image: url('image/footer-bg.jpg');
+        height: 50px;
+        width: 1480px;
+        padding-top: 40px;
+        border-radius: 600px;
+        color: white;
+
+    }
+
+}

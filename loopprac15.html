@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary To decimal</title>
+
+</head>
+
+<body>
+    <h1>Binary to Decimal Converter</h1>
+    <input type="text" id="input" placeholder="enter the binary no.">
+    <br>
+    <button onclick="getvalue()">Click</button>
+    <br>
+    <p id="result"></p>
+
+    <script>
+        function getvalue() {
+            var binary = document.getElementById("input").value;
+            let decimal = 0;
+
+            for (let i = 0; i < binary.length; i++) {
+                let bit = parseInt(binary[binary.length - 1 - i]);
+                decimal += bit * Math.pow(2, i);
+                document.getElementById('result').innerHTML = "decimal equivalent:" + decimal;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+.new {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    line-height: 5px;
+    padding-left: 150px;
+}
+
+.newq {
+    padding-left: 20px;
+    color: rgb(115, 115, 52);
+}
+
+.newr {
+
+    margin-bottom: 200px;
+}
+
+.colr {
+    color: yellow;
+}
+
+.man {
+    background-color: yellowgreen;
+    padding: 3px;
+}
+
+.nav {
+    padding: 30px;
+    padding-left: 100px;
+    background-color: rgb(45, 43, 43);
+
+
+
+}
+
+
+.red {
+    background-color: yellow;
+}
+
+.big {
+    color: white;
+    line-height: 20px;
+    font-style: italic;
+}
+
+.bigg {
+    line-height: 3px;
+    color: yellowgreen;
+}
+
+.high {
+    padding-left: 400px;
+}
+
+.jay {
+    background-color: white;
+}
+
+.yui {
+    padding-left: 300px;
+}
+
+.gyu {
+    font-size: x-large;
+}
+
+.bigh {
+    line-height: 3px;
+}
+
+.jij {
+    line-height: 3px;
+}
+
+.jik {
+    padding: 10px;
+}
+
+.maam {
+    background-color: yellowgreen;
+    padding: 3px;
+}
+
+.hklo {
+    background-color: rgb(32, 30, 30);
+    color: white;
+    padding: 0 0 100px;
+
+    .manu {
+        padding-left: 300px;
+    }
+
+    .blak {
+        background-color: black;
+        color: white;
+        margin: 90px;
+        margin-bottom: 20px;
+
+
+
+    }
+
+    .bigo {
+        color: yellowgreen;
+        padding-left: -100px;
+
+    }
+
+    .fav {
+        padding-left: 300px;
+        color: yellowgreen;
+        margin-top: 40px;
+    }

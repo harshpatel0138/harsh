@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Habit Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        #habit-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .habit-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: #e8f0fe;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .habit-item.completed {
+            background: #c8e6c9;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Habit Tracker</h1>
+        <form id="habit-form">
+            <input type="text" id="habit-input" placeholder="New habit..." required>
+            <button type="submit">Add Habit</button>
+        </form>
+        <ul id="habit-list"></ul>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const habitForm = document.getElementById('habit-form');
+            const habitInput = document.getElementById('habit-input');
+            const habitList = document.getElementById('habit-list');
+
+            let habits = JSON.parse(localStorage.getItem('habits')) || [];
+
+            const saveHabits = () => {
+                localStorage.setItem('habits', JSON.stringify(habits));
+            };
+
+            const renderHabits = () => {
+                habitList.innerHTML = '';
+                habits.forEach((habit, index) => {
+                    const li = document.createElement('li');
+                    li.className = 'habit-item' + (habit.completed ? ' completed' : '');
+                    li.innerHTML = `
+            <span>${habit.name}</span>
+            <button onclick="toggleHabit(${index})">${habit.completed ? 'Undo' : 'Done'}</button>
+          `;
+                    habitList.appendChild(li);
+                });
+            };
+
+            window.toggleHabit = (index) => {
+                habits[index].completed = !habits[index].completed;
+                saveHabits();
+                renderHabits();
+            };
+
+            habitForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const habitName = habitInput.value.trim();
+                if (habitName) {
+                    habits.push({ name: habitName, completed: false });
+                    saveHabits();
+                    renderHabits();
+                    habitInput.value = '';
+                }
+            });
+
+            renderHabits();
+        });
+    </script>
+</body>
+
+</html>

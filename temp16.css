@@ -1,0 +1,10 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-image: url('image/e-mini-russell-2000-index-futures-spread-trading-459x293.jpg');
+    height: 1000px;
+    width: 1000px;
+}

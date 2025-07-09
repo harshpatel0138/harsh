@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register here!</h1>
+    <hr>
+    <form action="next.php" method="GET">
+    <label for="name">Name :</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name here" />
+    <br>
+    <label for="">contact :</label>
+    <input type="tel" id="contact" name="contact" placeholder="Contact Number..." />
+    <br>
+    <input type="checkbox" name="hobbies" id="hobbies" value="Painting"> Painting
+    <br>
+    <input type="checkbox" name="hobbies" id="hobbies" value="Music"> Music
+    <br>
+    <label for="gender">Gender :</label>
+    <br>
+    <input type="radio" name="gender" id="gender" value="male" checked> Male
+    <input type="radio" name="gender" id="gender" value="female">Female
+    <br>
+    <label for="address">Address :</label>
+    <br>
+    <textarea cols="20" rows="3" placeholder="address" name="address" id="address"></textarea>
+    <br>
+    <label for="city">City :</label>
+    <select name="cities" id="cities">
+        <option value="rajkot">Rajkot</option>
+        <option value="amd">Ahmedabad</option>
+        <option value="brd">Baroda</option>
+    </select>
+    <br>
+    <input type="button" name="btn" id="btn" value="button">
+    <br>
+    <input type="submit" name="submit" id="submit">
+    <br>
+    <input type="reset" name="reset" id="reset">
+</form>
+</body>
+</html>

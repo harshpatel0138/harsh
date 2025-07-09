@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Query Selector</h1>
+    <hr>
+    <button>Change Color</button>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, possimus? Laborum architecto et, sit ipsam in maiores? Repudiandae voluptas molestiae assumenda praesentium mollitia? Tempora maiores ad perspiciatis tempore aliquid ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam inventore repellat soluta quas odio libero culpa. Ullam culpa facilis, maxime explicabo nisi accusamus ut nam optio, recusandae ad at consequatur.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto veniam, fugit mollitia dolore cupiditate quidem et doloremque ipsam officiis tempora assumenda fuga, saepe blanditiis cum sequi voluptas nostrum non aliquam!</p>
+    
+    <script>
+        var p = document.querySelectorAll("p");
+        console.log(p);
+
+        document.querySelector("button").addEventListener("click",function(){
+            alert("here is an alert.");
+        });
+        
+    </script>
+</body>
+</html>

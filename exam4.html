@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      height: 96vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .signup-form {
+      background-color: white;
+      padding: 10px 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      width: 220px;
+      text-align: center;
+    }
+
+    .signup-form h4 {
+      margin-bottom: 10px;
+    }
+
+    .signup-form input {
+      width: 95%;
+      margin: 5px 0;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .signup-form button {
+      width: 95%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .signup-form button:hover {
+      background-color: #0056b3;
+    }
+    .error{
+        color: red;
+        font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="signup-form" onsubmit="return getValue()">
+    <h4>Sign Up</h4>
+    <input type="text" name="name" placeholder="Full Name">
+    <p id="result">
+    </p>
+    <button type="submit">Create Account</button>
+  </form>
+
+  <script>
+    function getValue() {
+      var name = document.querySelector('input[name="name"]').value.trim();
+
+      if (name.length < 3) {
+        // alert("Please enter a valid name (min 3 characters).");
+        document.getElementById("result").innerHTML = "Please Enter a Valid Name";
+        document.getElementById("result").classList.add("error");
+        // document.getElementById("result").style.fontSize = "15px";
+        return false;
+
+      } 
+      else {
+        alert("Successfully Signed Up!");
+        return true;
+      }
+    }
+  </script>
+  
+</body>
+</html>

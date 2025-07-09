@@ -1,0 +1,24 @@
+<html>
+      <head>
+          <title> Multiplication table </title>
+      </head>
+      <body>
+         <input type="text" id="input" placeholder="Enter the no.">
+         <br>
+         <button onclick="getvalue()">Click</button>
+         <br>
+         <p id="result"></p>
+
+         <script>
+               function getvalue() {
+                  var n = parseInt(document.getElimentById('input').value;
+                  var result = "";
+                   
+                  for(var i=1; i<10; i++){
+                         result += n + " * " + i + " = " + (n * i) + "<br />";
+                }
+                document.getElimentById('result').innerHTML = result;
+      }
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(27, 197, 120);
+    padding: 8px;
+}
+
+.gig {
+    font-size: 0.5em;
+    padding-left: 100px;
+    margin: 5px;
+    color: white;
+
+
+}
+
+.hij {
+    padding-left: 500px;
+    font-size: 0.5em;
+    color: white;
+    margin-top: -20px;
+    margin-left: 80px;
+
+}
+
+.kale {
+    color: rgb(12, 83, 59);
+    font-size: 0.5em;
+    padding: 4px;
+    width: 40px;
+    height: auto;
+    margin: 4px;
+
+}
+
+.colou {
+    color: rgb(18, 190, 133);
+}
+
+.nef {
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.menu {
+    list-style: none;
+    height: 50px;
+
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #170d0d;
+    font-size: 0.4em;
+
+}
+
+.hako {
+    width: 50%;
+    margin-top: -40px;
+    margin-left: 30%;
+
+
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.tahe {
+    padding-left: 500px;
+    margin-top: -36px;
+
+
+
+
+}
